@@ -229,3 +229,38 @@ Cada usuario tendrá un panel privado donde podrá gestionar:
 - Lista de competencias
 - Servicios que ofrece
 - Información visible en el catálogo
+
+---
+
+Propuesta de estructura:
+
+WEB AULA VIRTUAL
+│
+├── 🟢 ZONA PÚBLICA (Accesible por todos)
+│   ├── 🏠 Home (Landing Page)
+│   │   ├── Hero (Gancho + Demo 3D)
+│   │   └── Destacados
+│   │
+│   ├── 📂 Catálogo (La página principal)
+│   │   ├── Sidebar (Filtros: HTML, CSS, Rol...)
+│   │   └── Grid (Tarjetas de Trabajadores)
+│   │
+│   ├── 👤 Ficha de Detalle (Perfil público)
+│   │   ├── Visor 3D (Interactivo)
+│   │   ├── Datos y Gráfica de Skills
+│   │   └── Botón "Contratar"
+│   │
+│   └── 🔐 Login / Registro
+│       ├── Formulario Acceso
+│       └── Formulario Registro (Selector: ¿Cliente o Trabajador?)
+│
+└── 🔴 ZONA PRIVADA (Requiere Login)
+    │
+    ├── 🛠 Dashboard Trabajador (Backoffice)
+    │   ├── Edición de Datos Personales
+    │   ├── Configuración Avatar 3D
+    │   └── Switch "Disponible/No Disponible"
+    │
+    └── 🛍️ Dashboard Cliente (Área Personal)
+        ├── Historial de Contrataciones
+        └── Estado de pedidos
